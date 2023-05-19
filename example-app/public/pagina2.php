@@ -7,7 +7,7 @@
 
 <body>
   <?php
-  $conexion = mysqli_connect("localhost", "sail", "password", "alumnos") or
+  $conexion = mysqli_connect("mysql", "sail", "password", "example_app") or
     die("Problemas con la conexión");
 
   mysqli_query($conexion, "insert into alumnos(nombre,mail,codigocurso) values 
